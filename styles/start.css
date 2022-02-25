@@ -1,0 +1,63 @@
+/*l des element principal en relatif pour permettre aux elements absolus d'etre positionnes*/
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #d9b682;
+    min-width: 1250px;
+    max-width: 1250px;
+    min-height: 703px;
+    max-height: 703px;
+    color: white;
+    font-weight: 800;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/playground.jpg");
+    filter: blur(5px);
+}
+
+.center {
+    position: relative;
+    margin-left:25%;
+    margin-top: 20%;
+    width: 50%;
+    height: 80%;
+    text-align: justify;
+    z-index: 1000;
+}
+
+.center h1, .center h2  {
+    text-align: center;
+}
+
+
+
+.tryagain {
+    margin-top: 5%;
+}
+
+.tryagain a, .center a{
+    font-weight: 800;
+    font-size: 1.3em;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    margin-left: 43%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 25%;
+    width: 50%;
+    color: rgb(73, 73, 73);
+    text-align: center;
+    font-size: 0.5em;
+}
