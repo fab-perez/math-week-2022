@@ -143,7 +143,7 @@ function gate_click() {
 		init="";
 		while (init==""){init=prompt("Bravo, tu as réussi à sortir, le portail est ouvert! \nMaintenant entre les initiales de ton prénom et de ton nom (par exemple AB):");}
 		alert("...et donne ce code à ton prof de maths qui te remettra une récompense:\n\n" + crypt(init) + "\n \n Merci d'avoir joué. A bientôt.");
-		window.open("start.html","_self");
+		window.open("https://ecoleinternationalepaca.fr/","_self");
     } else {
         if (code != undefined) {
             alert("Ce n'est pas le bon code, le portail ne s'ouvre pas! Cherche encore. ");
